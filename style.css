@@ -1,0 +1,361 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.service {
+  background-color: red;
+  padding-top: 58px;
+  padding-bottom: 58px;
+}
+.container {
+  margin: auto;
+  width: 960px;
+}
+.service-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 208px;
+  height: 306px;
+  background-color: white;
+}
+.service-title > .img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  height: 120px;
+  background-color: rgb(51, 51, 51);
+}
+.service-title > .img > span {
+  color: white;
+}
+.service-name {
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 2px;
+  margin-top: 2px;
+}
+.service-title:hover {
+  background-color: rgb(118, 195, 143);
+}
+.service-title:hover > .img > span {
+  color: black;
+}
+.service-title:hover .service-name {
+  color: white;
+}
+.service-title:hover .about-title {
+  color: white;
+}
+.service-title:hover .img {
+  background-color: white;
+}
+.about-title {
+  font-size: 12px;
+  text-align: center;
+  margin-left: 10px;
+  margin-right: 10px;
+  color: rgb(151, 151, 151);
+}
+
+.service-titles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.title {
+  background-color: red;
+  padding-bottom: 58px;
+}
+.latest-work {
+  position: relative;
+  height: 4px;
+  width: 960px;
+  margin: auto;
+  background-color: rgb(48, 48, 48);
+}
+.title-name {
+  position: absolute;
+  font-size: 29px;
+  height: 30px;
+  width: 250px;
+  color: white;
+  background-color: rgb(48, 48, 48);
+  left: 50%;
+  bottom: 50%;
+  transform: translate(-50%, 50%);
+  text-align: center;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.work {
+  background-color: red;
+}
+.work-items {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 58px;
+}
+.work-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  height: 195px;
+  background-color: rgb(53, 53, 53);
+  margin: 8px;
+  position: relative;
+  border: 2px solid white;
+  transition: 0.5s;
+  overflow: hidden;
+}
+.work-item > span {
+  color: white;
+}
+.work-item:hover {
+  border: 2px solid green;
+}
+.work-item:hover .work-item-title {
+  bottom: -50px;
+}
+.work-item-title {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: 30px;
+  background-color: black;
+  bottom: 0;
+  transition: 0.5s;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.nav-logo {
+  color: white;
+}
+.logo {
+  font-size: 40px;
+}
+
+header {
+  background-color: rgb(41, 0, 0);
+}
+
+.nav-items {
+  display: flex;
+  align-items: center;
+}
+.nav-item {
+  color: white;
+  list-style-type: none;
+}
+.nav-item:hover {
+  border-radius: 3px;
+  background-color: rgb(118, 195, 143);
+}
+
+.nav-item:not(:last-child) {
+  margin-right: 30px;
+}
+.nav {
+  padding: 15px 0px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.slider {
+  position: relative;
+  display: flex;
+  height: 440px;
+  background-color: rgb(41, 0, 0);
+  flex-direction: row;
+}
+.arrows {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  align-items: center;
+  justify-content: space-between;
+}
+.left-arrow {
+  font-size: 30px;
+  color: rgb(118, 195, 143);
+}
+.right-arrow {
+  font-size: 30px;
+  color: rgb(118, 195, 143);
+}
+.slide {
+  display: flex;
+  flex-direction: row;
+}
+.slide > div {
+  flex: 1;
+}
+.slide-cricle-block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.slide-circle {
+  width: 300px;
+  height: 300px;
+  background-color: rgb(51, 51, 51);
+  border-radius: 200px;
+  border: 10px rgb(107, 107, 107) solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.slide-circle > span {
+  color: white;
+}
+.slide-text-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 42px;
+}
+.slide-text-block > h1 {
+  color: white;
+  padding-bottom: 32px;
+  font-size: 38px;
+  width: 277px;
+}
+.slide-text-block > p {
+  color: rgb(151, 151, 151);
+  padding-bottom: 22px;
+  padding-right: 100px;
+}
+.text-button > button {
+  background: rgb(118, 195, 143);
+  color: white;
+  border-radius: 7px;
+  height: 34px;
+  width: 142px;
+}
+
+.button-right {
+  height: 50px;
+  width: 50px;
+  margin: 15px;
+  display: flex;
+  align-items: center;
+  background-color: azure;
+}
+.aboutUs {
+  margin: 15px;
+  height: 200px;
+  width: 400px;
+  color: antiquewhite;
+}
+
+.image {
+  margin: 15px;
+  height: 200px;
+  width: 200px;
+}
+
+.button-left {
+  margin: 15px;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  background-color: azure;
+}
+
+.information-items {
+  display: flex;
+}
+.information-item {
+  flex: 1;
+  padding-top: 40px;
+  height: 450px;
+  color: rgb(151, 151, 151);
+}
+
+.information-item:not(:last-child) {
+  margin-right: 20px;
+}
+
+h3 {
+  color: white;
+  margin-bottom: 35px;
+}
+.informations {
+  background-color: rgb(48, 48, 48);
+}
+
+.left-arrow {
+  display: flex;
+  align-items: center;
+  margin-right: 41px;
+}
+
+.right-arrow {
+  display: flex;
+  align-items: center;
+}
+
+.about-contact > form > button {
+  height: 2em;
+  width: 6em;
+}
+
+.about-blog > h5 {
+  color: rgb(118, 195, 143);
+  padding-bottom: 6px;
+}
+.about-blog > h6 > span {
+  color: rgb(118, 195, 143);
+}
+.about-blog > a {
+  color: rgb(118, 195, 143);
+  text-decoration: none;
+}
+.about-blog > h6 {
+  padding-bottom: 6px;
+}
+.about-blog > p {
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+.about-links > ul {
+  margin-left: 16px;
+}
+.about-links ul > li {
+  border-bottom: 1px solid rgb(64, 64, 64);
+  padding-bottom: 3px;
+  padding-top: 3px;
+}
+.about-links ul > li > a {
+  text-decoration: none;
+  color: rgb(118, 195, 143);
+}
+
+.about-tweets p > span {
+  color: rgb(118, 195, 143);
+}
+.about-tweets p {
+  padding-bottom: 15px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .container {
+    width: 100%;
+  }
+  .service-titles {
+    justify-content: center;
+  }
+}
